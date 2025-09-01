@@ -1,0 +1,5 @@
+{
+  "name": "OutfitOS",
+  "description": "An AI-powered virtual try-on application with a Y2K aesthetic. Upload a model photo and garment images to generate realistic try-on visuals. Use the storyboard canvas to direct the AI for perfect fashion shots.",
+  "requestFramePermissions": []
+}
