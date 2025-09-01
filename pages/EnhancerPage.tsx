@@ -3,7 +3,11 @@ import { PlusIcon, SparklesIcon } from '../components/icons';
 import { enhanceImageRealism } from '../services/geminiService';
 import { ChromeHeart, ChromeStar } from '../components/Clipart';
 
-const Uploader: React.FC<{ onUpload: (file: File) }> = ({ onUpload }) => {
+interface UploaderProps {
+  onUpload: (file: File) => void;
+}
+
+const Uploader: React.FC<UploaderProps> = ({ onUpload }) => {
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files && e.target.files[0]) {
       onUpload(e.target.files[0]);
